@@ -533,6 +533,13 @@ ulx li {
   padding: 15px 15px 15px 35px;
 }
 
+.container1 {  
+    max-width: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 100%) {padding: 0px 30px 0px 30px);}
+    border: 12px solid transparent;
+}
+
 /* 
  * 6.9 Section: photos
  */
