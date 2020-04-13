@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://ubwins.cse.buffalo.edu/wintech2016/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A-Turf by OSU
+</title>
+
+    <!-- css -->
+    <!-- <link rel="shortcut icon" type="image/png" href="./images/backgrounds/tabIcon.png"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://instructure-uploads.s3.amazonaws.com/account_85970000000000001/attachments/4/osu-favicon.ico?AWSAccessKeyId=AKIAJFNFXH2V2O7RPCAA&amp;Expires=1934532599&amp;Signature=R4zpTLEMT1r2PprAzsGAqQehLkU%3D&amp;response-cache-control=Cache-Control%3Amax-age%3D473364000%2C%20public&amp;response-expires=473364000" />
+    <link rel="stylesheet" href="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/ionicons.min.css">
+    <link rel="stylesheet" href="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/main.css">
+</head>
+<body data-spy="scroll" data-target="#site-nav" data-gr-c-s-loaded="true">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a href="https://osu.edu">
+                        <img src="./images/backgrounds/OSU_logo.PNG" alt="Ohio State Logo" width="300", height="43.5">
+                    </a>
+                    <!-- <a class="logo" href="https://www.osu.edu/">Ohio State University</a> -->
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li><a data-scroll="" onclick="hidealldivs(); about.style.display=&#39;block&#39;;" href="https://ubwins.cse.buffalo.edu/wintech2016/#"><b>Home</b></a></li>
+                    <li><a data-scroll="" onclick="hidealldivs(); faq.style.display=&#39;block&#39;;" href="https://ubwins.cse.buffalo.edu/wintech2016/#"><b>Technical Report</b></a></li>     
+
+                    <li><a data-scroll="" onclick="hidealldivs(); speakers.style.display=&#39;block&#39;;" href="https://ubwins.cse.buffalo.edu/wintech2016/#"><b>About Us</b></a></li>                  
+                    <!--<li><a data-scroll href="#partner">Sponsors</a></li> -->               
+                    <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
+                    <!-- <li><a data-scroll="" onclick="hidealldivs(); registration.style.display=&#39;block&#39;;" href="https://ubwins.cse.buffalo.edu/wintech2016/#">A-turf Map</a></li>
+                    <li><a data-scroll="" onclick="hidealldivs(); demo.style.display=&#39;block&#39;;" href="https://ubwins.cse.buffalo.edu/wintech2016/#">About Us</a></li>    
+                    <li><a data-scroll="" onclick="hidealldivs(); keynote.style.display=&#39;block&#39;;" href="https://ubwins.cse.buffalo.edu/wintech2016/#">White Paper</a></li>           
+                    <li><a data-scroll="" onclick="hidealldivs(); schedule.style.display=&#39;block&#39;;" href="https://ubwins.cse.buffalo.edu/wintech2016/#">Contact</a></li> -->
+                    
+					<!--<li><a data-scroll href="#photos">Photos</a></li> -->
+                
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+
+            <p>&nbsp;</p>
+            <h1>A-Turf:</h1>
+            
+            <h1>Privacy-preserving Acoustic Signal based Encounter Detection</h1>
+            
+            <h1>for Coronavirus Tracking</h1>
+            
+        
+        </div>
+    </header>
+
+    <section id="about" class="section about" style="display: block;">
+        <div class="container">
+            <div class="row">
+                <p>
+                    The outbreak of the novel coronavirus (COVID-19) is unfolding as a major international crisis whose influence extends to major aspects of our daily lives. There have been over 1,000,000 infections worldwide in early April 2020. To this end, tracking and predicting how the virus could spread among people and regions have become critical parts of public health response strategies and early warning and prediction systems. 
+                </p>
+                <p>
+                    We build a privacy-preserving crowdsensing system called A-Turf, an acoustic-signal-based communication and sensing system for effective coronavirus tracking and prediction, by leveraging ubiquitous mobile devices. In such a system, individual user IDs are not disclosed to others and the system can accurately detect “encounters” between users in physical proximity. This work will overcome key challenges of infrastructure-based techniques (such as video monitoring systems) that are difficult to scale with broad coverage. It can also alleviate the privacy issues of other radio-signal-based crowdsensing solutions for virus tracking (such as Bluetooth-based ones), in which unique MAC addresses of individual mobile phones are disclosed to peers nearby.  
+                </p>
+
+                <div class="col-md-6">
+                    <img src="./images/backgrounds/before_encounter_1.jpg" width="579.348" height="366.545" alt="Before Encounter">
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/backgrounds/encounter_two_persons_1.jpg" width="632.709" height="365.274" alt="Encounter Two Persons">
+                </div>
+
+                <p>&nbsp;</p>
+                <p>
+                    <b>A Simplified Working Scenario of A-Turf:</b> A simplified working scenario is as follows. Bob has a mobile phone with A-turf installed, as Figure 1 shows. His mobile phone broadcasts its randomly generated ID, using its speaker to send ultrasonic signals at a certain frequency f (or at multiple frequencies), either continuously or occasionally (at its discretion), to nearby phones. Note that the ID is randomly generated; it uses neither Wi-Fi nor Bluetooth MAC addresses. Meanwhile, Bob’s phone also listens on frequency f, trying to receive ultrasonic signals from surrounding phones. Alice does the same. Once these two people are in the same physical proximity, Bob’s mobile phone can receive Alice’s ultrasonic signals (i.e., Alice’s randomly generated ID) and vice versa. Note that both Bob and Alice may receive multiple such ultrasonic signals from each other, depending on how long they are nearby. Once Bob’s phone receives these signals, it will record them with the current timestamp in its local database. Bob’s phone can either automatically report these recordings to a central server (say at the CDC) or wait for Bob’s manual processing. Alice’s phone does the same.
+                </p>
+
+                <div class="col-md-6">
+                    <p>
+                        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Practical Working Scenario 1</b>
+                    </p>
+                    <p>
+                        <ol>
+                          <li>Periodically, the user generates a random ID and broadcasts it. An encountering user receives it and stores it in her own local database with a timestamp and location information on her mobile phone.</li>
+                          <li>If a user gets infected, the user uploads the list of random IDs she sent out to a public server (e.g., the CDC’s server) at her discretion. Other non-infected users do not upload their encountering information to the public server.</li>
+                          <li>Other users can determine their individual risk levels based on publicly available data and their locally stored encounter information by matching their received random IDs, which represent encounters.</li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <p>
+                        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Practical Working Scenario 2</b>
+                    </p>
+                    <p>
+                        <ol>
+                          <li>Periodically, the user generates a random ID and broadcasts it. An encountering user receives it and stores it in her own local database with a timestamp and location information on her mobile phone.</li>
+                          <li>Each user volunteers to report all her sent and received random IDs to the CDC with her personal real ID. Each ID is associated with a location and a timestamp.</li>
+                          <li>Once users get infected, the CDC can proactively calculate the risk levels for individual users and push such information to them.</li>
+                        </ol>
+                    </p>
+                </div>
+
+                <p>&nbsp;</p>
+
+                <p>
+                    <b>Privacy Preservation:</b> Information privacy means the information owner has a certain degree of control over information sharing with others. This means that the degree of privacy preservation is not measured by the amount of information shared or disclosed to others; instead, it is measured by the owner’s degree of control over such sharing or disclosure. In A-turf, users have full control over their individual information. Our acoustic-signal-based solution is different from radio-based solutions on mobile phones such as Bluetooth-based ones where unique device MAC addresses are disclosed outside user control. Besides control over unique identifiers (e.g., phone IDs), users also have full control over information sharing or disclosure to their peers or public health authorities (e.g., the CDC).  Here are two practical working scenarios with different degrees of information sharing or disclosure.
+                </p>
+
+                <p>
+                    In working scenario 1, unaffected users will not disclose any information to the CDC. The tradeoff is that the CDC cannot proactively calculate and push risk-level information to users. In working scenario 2, users disclose their encounters to the CDC, which knows their real IDs and trajectories. The benefits are that the CDC can calculate their risk levels (with other information beyond that published in case 1), and push risk information to individual users.  Also, the CDC has a better global view thanks to such data. Other working scenarios are possible at the discretion of individual users. For instance, some users may choose to upload their encounter information without timestamps and locations. Our system grants users fine-grained control over information sharing and disclosure. Also, a user may choose to just receive encountering peers’ acoustic random IDs without sending hers.
+                </p>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <!--
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2015<br>June 25</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>California<br>USA</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>150<br>Tickets</h3>
+                
+                </div>
+                <div class="col-sm-3">
+                
+                    <i class="ion-speakerphone"></i>
+                    <h3>06<br>Speakers</h3>
+                
+                </div>
+            </div><!- - row - ->
+        </div><!- - container - ->
+    </section>
+    -->
+
+    <section id="speakers" class="section speakers" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <h3>
+                    About Us
+                </h3>
+                <p>&nbsp;</p>
+                <p>
+                    <b>Faculty members:</b>
+                </p>
+                <p>
+                    <ol style="list-style-type:circle;">
+                        <li>Dong Xuan, Professor of CSE, The Ohio State University</li>
+                        <li>Ness Shroff, Ohio Eminent Scholar in Networking and Communications, Chaired Professor of ECE and CSE, The Ohio State University</li>
+                        <li>Adam C. Champion, Senior Lecturer of CSE, The Ohio State University</li>
+                    </ol>
+                </p>
+                <p>
+                    <b>Student members:</b>
+                </p>
+                <p>
+                    <ol style="list-style-type:circle;">
+                        <li>Yuxiang Luo (B.S. student, CSE)</li>
+                        <li>Cheng Zhang (Ph.D. student, CSE)</li>
+                        <li>Yunqi Zhang (B.S. student, CSE)</li>
+                    </ol>
+                </p>
+                <p>
+                    <p><b>Contact:</b></p>
+                    <ol style="list-style-type:none;">
+                        <li><a href="mailto:aturfosu@gmail.com?Subject=A-Turf" target="_top">aturfosu@gmail.com</a></li>
+                    </ol>
+                </p>
+            </div>
+
+            
+
+			<!-- <p align="justify">Topics of interest include, but are not limited to:</p> -->
+
+			<!-- <ulx class="list-arrow-right" style="font-weight: 100;">
+                <li>Design and evaluation of wireless testbeds, prototypes and platforms</li>
+				<li>Experiences/lessons from recent testbed deployments</li>
+				<li>Testbed management issues and monitoring support</li>
+				<li>Experimental evaluation of performance/energy consumption of applications and protocols, including the impact of cross-layer interactions</li>
+				<li>Large-scale and heterogeneous wireless network evaluations</li>
+				<li>Approaches for real-world evaluation of mobile networks (LTE, 5G)</li>
+				<li>Measurement and evaluation on large-scale smartphone based deployments</li>
+				<li>Studies on real-world white-space networks, interference and spectrum usage measurements</li>
+				<li>Techniques for improving reproducibility of real-world testing</li>
+				<li>Measurement and characterization (modeling) of real-world aspects of wireless networks such as usage patterns, trafic, mobility and channel characteristics</li>
+				<li>Experiences with mmWave communications and networking</li>
+				<li>IoT, cyber-physical systems, wearable computing</li>
+				<li>Underwater/underground communications and networking</li>
+				<li>Practical studies on UAV, multi-robot and vehicular networks</li>
+				<li>Experimentation with Visible Light Communications (VLC) technology</li>
+				<li>Software Defined Networking (SDN) for mobile and wireless networks</li>
+				<li>Security and privacy mechanisms for mobile and wireless networks</li>
+            </ulx> -->
+            <!-- <p>
+            </p><h3 class="section-title multiple-title">Important Dates</h3> -->
+
+            <!--
+            <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
+            -->
+
+            <!-- <ul class="list-arrow-right">
+                <li>Paper Registration: <strike>May 29, 2016</strike> June 12, 2016, 23:59 EDT</li>
+                <li>Paper Submission: <strike>June 05, 2016</strike> June 12, 2016, 23:59 EDT</li>
+                <li>Paper Acceptance Notification: <strike>June 29, 2016</strike> July 18, 2016</li>
+                <li>Paper Camera Ready: <strike>July 15, 2016</strike> August 1, 2016</li>
+                <br>
+                <li>Poster/Demo Submission: July 22, 2016, 23:59 EDT</li>
+                <li>Poster/Demo Acceptance Notification: July 29, 2016</li>
+                <li>Poster/Demo Camera Ready: August 5, 2016</li>
+            </ul> -->
+
+            <!--
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!- - /.speaker - ->
+                </div><!- - /.col-md-4 - ->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-2.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!- - /.speaker - ->
+                </div><!- - /.col-md-4 - ->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-3.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div><!- - /.speaker - ->
+                </div><!- - /.col-md-4 - ->
+            </div><!- - /.row - ->
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-4.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-5.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-6.jpg">
+                        </figure>
+                        <h4>Jhon Smith</h4>
+                        <p>CEO of Peren</p>
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!--
+    <section id="partner" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">SPONSORS</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-1"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-2"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-3"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-4"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-5"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-6"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-7"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-8"></a>
+                </div>
+            </div>   
+    </section>
+    -->
+
+    <section id="faq" class="section faq" style="display: none;">
+        <div class="container">
+            <div class="row">
+               <h2>Available Soon</h2>
+            </div>
+
+            
+
+            <!--
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Steering Committee</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Workshop Chairs</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                	
+                                </div>
+                            </div>
+                        </div>
+  						
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Office address ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> How should I dress ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> I have specific questions that are not addressed here. Who can help me ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+    </div></section>
+
+    <!--
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Photos</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">
+                        
+                        <li class="grid-item grid-item-sm-6">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                        </li>
+                    
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+                        <p>Eardenia<br> The Grand Hall<br> House # 08, Road #52, Street<br> Phone: +1159t3764<br> Email: example@mail.com</p>
+                    </address>
+                </div>
+                <div class="col-sm-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.50013548559!2d-78.9870674333782!3d40.76030630398601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sbd!4v1436299406518" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!--
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Designed and <br> Developed by <a href="http://technextit.com">Technext Limited</a></p>
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    -->
+
+    <section id="registration" class="section registration" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">A-turf Map</h3>
+                </div>
+            </div>
+            <!-- <p align="justify">Each submission must be a single PDF file no longer than eight (8) pages in length (in two-column, 10-point format) including references, using the same <a href="https://www.sigmobile.org/mobicom/2016/submit.php" target="_blank">formatting guidelines</a> as the main conference. Papers must include the author name and affiliation for single-blind peer reviewing by the program committee. Submissions must be original work not under review at any other workshop, conference, or journal. Authors of accepted papers are expected to present their papers at the workshop. Accepted papers will be published in the ACM WiNTECH proceedings and will be archived in the ACM Library. All papers will be considered for the <b>Best Paper Award</b>.
+            <br>
+            <br>
+            Visit the <a href="https://ubwins.cse.buffalo.edu/wintech2016submit/" target="_blank"><b>paper submission site</b></a> to submit your manuscript.
+            </p> -->
+
+            <!-- <h3 class="section-title multiple-title">Important Dates</h3> -->
+
+            <!--
+            <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
+            -->
+
+            <!-- <ul class="list-arrow-right">
+                <li>Paper Registration: <strike>May 29, 2016</strike> June 12, 2016, 23:59 EDT</li>
+                <li>Paper Submission: <strike>June 05, 2016</strike> June 12, 2016, 23:59 EDT</li>
+                <li>Paper Acceptance Notification: <strike>June 29, 2016</strike> July 18, 2016</li>
+                <li>Paper Camera Ready: <strike>July 15, 2016</strike> August 1, 2016</li>
+                <br>
+                <li>Poster/Demo Submission: July 22, 2016, 23:59 EDT</li>
+                <li>Poster/Demo Acceptance Notification: July 29, 2016</li>
+                <li>Poster/Demo Camera Ready: August 5, 2016</li>
+            </ul> -->
+            <!--
+            <div class="text-center mt20">
+            	<a target="_blank" class="btn btn-black" href="">Submission Website</a>
+            </div>
+            -->
+            <!--
+            <form action="#" id="registration-form">
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                        <div class="alert"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="city" id="city" required>
+                                <option readonly>City</option>
+                                <option>City Name 1</option>
+                                <option>City Name 2</option>
+                                <option>City Name 3</option>
+                                <option>City Name 4</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="program" id="program" required>
+                                <option readonly>Select Your Program</option>
+                                <option>Program Name 1</option>
+                                <option>Program Name 2</option>
+                                <option>Program Name 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt20">
+                    <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
+                </div>
+            </form>
+            -->
+        </div>
+    </section>
+
+    <section id="demo" class="section demo" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">About Us</h3>
+                </div>
+            </div>
+
+            <p align="justify"></p>
+
+            <!--
+            <div class="text-center mt20">
+            	<a target="_blank" class="btn btn-black" href="">Submission Website</a>
+            </div>
+            -->
+            <!--
+            <form action="#" id="registration-form">
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                        <div class="alert"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="city" id="city" required>
+                                <option readonly>City</option>
+                                <option>City Name 1</option>
+                                <option>City Name 2</option>
+                                <option>City Name 3</option>
+                                <option>City Name 4</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="program" id="program" required>
+                                <option readonly>Select Your Program</option>
+                                <option>Program Name 1</option>
+                                <option>Program Name 2</option>
+                                <option>Program Name 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt20">
+                    <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
+                </div>
+            </form>
+            -->
+        </div>
+    </section>
+
+    <section id="schedule" class="section schedule" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Contact</h3>
+                </div>
+            </div>
+
+            <!-- <div class="list-group">
+            	<a class="list-group-item" style="background-color:#00cc66"><h4>08.30 - 09:00 Coffee and Registrations</h4></a>
+            	<a class="list-group-item" style="background-color:#f8c8a6"><h4>09:00 - 09:10 Welcome and Introductory Remarks</h4></a>
+            	<a class="list-group-item" style="background-color:#f8c8a6"><h4>09:10 - 10:15 Keynote: Reproducibility in Wireless Experimentation: Need, Challenges, and Approaches - Prof. Guevara Noubir</h4></a>
+            	<a class="list-group-item" style="background-color:#00cc66"><h4>10:15 - 10:30 Coffee Break</h4></a>
+            	<a class="list-group-item" style="background-color:#33ccff"><h4>10:30 - 11:30 Session I: Insights into new technologies (Chair: Doug J. Leith)</h4></a>
+            	<a class="list-group-item" style="background-color:#ffffff">
+			            <b>Demystifying Low-Power Wide-Area Communications for City IoT Applications</b>
+			            <br>
+			            Sokratis Kartakis (Imperial College London), Babu D. Choudhary (Imperial College London), Alexander D. Gluhak (Digital Catapult, UK), Lambros Lambrinos (Cyprus University of Technology), Julie A. McCann (Imperial College London)
+			            <br>
+			            <br>
+			            <b>Practical Lower Layer 60 GHz Measurements Using Commercial Off-The-Shelf Hardware</b>
+			            <br>
+			            Adrian Loch (IMDEA Networks Institute), Guillermo Bielsa (IMDEA Networks Institute / Universidad Carlos III de Madrid), Joerg Widmer (IMDEA Networks Institute)
+			            <br>
+			            <br>
+			            <b>Evaluating 802.11ac Features in Indoor WLAN: An Empirical Study of Performance and Fairness</b>
+			            <br>
+			            Lito Kriara (Disney Research), Edgar Costa Molero (ETH Zurich), Thomas R. Gross (ETH Zurich)
+            	</a>
+            	<a class="list-group-item" style="background-color:#33ccff"><h4>11:30 - 12:30 Session II: LTE/Wi-Fi co-existence and scheduling (Chair: Parth Pathak)</h4></a>
+            	<a class="list-group-item" style="background-color:#ffffff">
+		            	<b>srsLTE: An Open-Source Platform for LTE Evolution and Experimentation</b>
+		            	<br>
+		            	Ismael Gomez-Miguelez (Software Radio Systems Limited, Ireland), Andres Garcia-Saavedra (NEC Laboratories Europe, Germany), Paul D. Sutton (Software Radio Systems Limited, Ireland), Pablo Serrano (Universidad Carlos III de Madrid, Spain), Cristina Cano (Inria Lille-Nord Europe, France), Douglas J. Leith (Trinity College Dublin, Ireland)
+		            	<br>
+		            	<br>
+		            	<b>LTE/Wi-Fi Co-existence under Scrutiny: An Empirical Study</b>
+		            	<br>
+		            	Chiara Capretti (Universita degli Studi di Brescia, Italy), Francesco Gringoli (Universita degli Studi di Brescia, Italy), Nicolo Facchi (Universita degli Studi di Brescia, Italy), Paul Patras (The University of Edinburgh)
+		            	<br>
+		            	<br>
+		            	<b>Experimental Evaluation of Multi-path Schedulers for LTE/WiFi Devices</b>
+		            	<br>
+		            	Bahar Partov (Trinity College Dublin), Douglas J. Leith (Trinity College Dublin)
+            	</a>
+            	<a class="list-group-item" style="background-color:#00cc66"><h4>12:30 - 13:50 Lunch Break</h4></a>
+            	<a class="list-group-item" style="background-color:#33ccff"><h4>13:50 - 15:10 Session III: Testbeds and platforms (Chair: Dimitrios Koutsonikolas)</h4></a>
+            	<a class="list-group-item" style="background-color:#ffffff">
+		            	<b>Topology Realization using Gain Control for Wireless Testbeds</b>
+		            	<br>
+		            	Samer S. Hanna (Alexandria University), Karim G. Seddik (American University in Cairo), Amr A. El-Sherif (Nile University)
+		            	<br>
+		            	<br>
+		            	<b>Enabling Synchronous Directional Channel Access on SDRs for Spectrum Sharing Applications</b>
+		            	<br>
+		            	Danh H. Nguyen (Drexel University), Anton Paatelma (Center for Wireless Communications, University of Oulu, Finland), Harri Saarnisaari (Center for Wireless Communications, University of Oulu, Finland),  Nagarajan Kandasamy (Drexel University), Kapil R. Dandekar (Drexel University)
+		            	<br>
+		            	<br>
+		            	<b>Automating 3D Wireless Measurements with Drones</b>
+		            	<br>
+		            	Ethan Yu (Dartmouth College), Xi Xiong (Dartmouth College), Xia Zhou (Dartmouth College)
+		            	<br>
+		            	<br>
+		            	<b>CRC: Collaborative Research and Teaching Testbed for Wireless Communications and Networks</b>
+		            	<br>
+		            	Samer S. Hanna (Alexandria University), Arsany Guirguis (Alexandria University), Moustafa Youssef (Egypt-Japan Uni. of Sci. and Tech.), Mustafa Y. ElNainay (Alexandria University), Amr A. El-Sherif (Nile University), Karim G. Seddik (American University in Cairo), Mahmoud A. Mahdi (Zagazig University), Yaser A. El-Nakieb (Virginia Tech MENA), Mahmoud Alaa Eldin (Alexandria University), Dina M. Saber (Alexandria University)
+            	</a>
+            	<a class="list-group-item" style="background-color:#f8c8a6"><h4>15:10 - 15:30 Demo/Poster Teasers Session</h4></a>
+            	<a class="list-group-item" style="background-color:#00cc66"><h4>15:30 - 16:30 Coffee Break and Demos/Posters Session</h4></a>
+            	<a class="list-group-item" style="background-color:#ffffff">
+		            	<b>Demo: Enhancing Indoor Spatial Reuse through Adaptive Antenna Beamsteering</b>
+		            	<br>
+		            	Danh H. Nguyen (Drexel University), Anton Paatelma (University of Oulu), Harri Saarnisaari (University of Oulu), Nagarajan Kandasamy (Drexel University), Kapil R. Dandekar (Drexel University)
+		            	<br>
+		            	<br>
+		            	<b>Demo: Radar-Enhanced mm-Wave Agile Beamsteering</b>
+		            	<br>
+		            	Julian Arnold (RWTH Aachen University), Ljiljana Simic (RWTH Aachen University), Marina Petrova (RWTH Aachen University), Petri Mahonen (RWTH Aachen University)
+		            	<br>
+		            	<br>
+		            	<b>DEMO: MONROE, a distributed platform to measure and assess mobile broadband networks</b>
+		            	<br>
+		            	Miguel Peon Quiros (IMDEA Networks), Ozgu Alay (SImula Research Laboratory), Andra Lutu (SImula Research Laboratory), Rafael Garcia (IMDEA Networks), Vincenzo Mancuso (IMDEA Networks), Thomas Hirsch (Celerway Communications), Tobias Dely (Celerway Communications), Jonas Werme (Celerway Communications), Kristian Evensen (Celerway Communications), Audun Hansen (Celerway Communications), Stefan Alfredsson (Karlstad University), Jonas Karlsson (Karlstad University), Anna Brunstrom (Karlstad University), Ali Safari Khatouni (Politecnico di Torino), Marco Mellia (Politecnico di Torino), Marco Ajmone Marsan (Politecnico di Torino), Roberto Monno (Nextworks), Hakon Lonsethagen (Telenor Research)
+		            	<br>
+		            	<br>
+		            	<b>Demo: The EmPOWER Mobile Network Operating System</b>
+		            	<br>
+		            	Roberto Riggio (CREATE-NET)
+		            	<br>
+		            	<br>
+		            	<b>Demo - MAC Learning: Enabling Automatic Combination of Elementary Protocol Components</b>
+		            	<br>
+		            	Ilenia Tinnirello (Universita degli studi di Palermo), Domenico Garlisi (Universita degli studi di Palermo), Fabrizio Giuliano (Universita degli studi di Palermo), Violet R. Syrotiuk (Arizona State University), Giuseppe Bianchi (Universita degli studi di Roma Tor Vergata)
+		            	<br>
+		            	<br>
+		            	<b>Demo: D-LiTE-ful: An evaluation platform for DASH QoE for SDN-enabled ISP offloading in LTE</b>
+		            	<br>
+		            	Jason J. Quinlan (University College Cork), Aleksandr Reviakin (University College Cork), Ahmed Khalid (University College Cork), K.K. Ramakrishnan (University of California)
+		            	<br>
+		            	<br>
+		            	<b>Demo: UB-ANC Emulator: An Emulation Framework for Multi-Agent Drone Networks</b>
+		            	<br>
+		            	Jalil Modares (University at Buffalo), Nicholas Mastronade (University at Buffalo), Karthik Dantu (University at Buffalo)
+		            	<br>
+		            	<br>
+		            	<b>Poster: UB-ANC: A Flexible Airborne Networking and Communications Testbed</b>
+		            	<br>
+		            	Jalil Modares (University at Buffalo), Nicholas Mastronade (University at Buffalo)
+		            	<br>
+		            	<br>
+		            	<b>Poster: Pilot Deployment of Early Warning System for Landslides in Eastern Himalayas</b>
+		            	<br>
+		            	Sangeeth K (Amrita Vishwa Vidyapeetham University), P. Venkat Rangan (Amrita Vishwa Vidyapeetham University), Maneesha Vinodini Ramesh (Amrita Vishwa Vidyapeetham University)
+            	</a>
+            	<a class="list-group-item" style="background-color:#f8c8a6"><h4>16:30 - 17:30 Panel: How to do experimental research</h4>
+            	<b>Chair: </b>Kannan Srinivasan (The Ohio State University)
+            	<br>
+            	<b>Members: </b>Petri Mahonen (RWTH Aachen University), Thyaga Nandagopal (National Science Foundation), Ioannis Pefkianakis (HP Labs), Ivan Seskar (Rutgers University)
+            	</a>
+            	<a class="list-group-item" style="background-color:#f8c8a6"><h4>17:30 - 17:40 Awards and Closing remarks</h4></a>
+            </div> -->
+            <!--
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Welcome and intro</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Tips and share</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>View from the top</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+            </div>
+            -->
+    </div></section>
+
+    <section id="keynote" class="section keynote" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">White Paper</h3>
+                </div>
+            </div>
+
+            <!-- <b>Speaker</b>
+            <br>
+            <p align="justify">Prof. Guevara Noubir, Northeastern University</p>
+            <b>Title</b>
+            <br>
+            <p align="justify">Reproducibility in Wireless Experimentation: Need, Challenges, and Approaches</p>
+            <b>Abstract</b>
+            <br>
+            <p align="justify">Wireless networks are the key enabling technology of the mobile revolution. However, experimental mobile and wireless research is still hindered by the lack of a solid framework to adequately evaluate the performance of a wide variety of techniques and protocols proposed by the community. In this talk, I will motivate the need for experimental reproducibility as a necessary aspect for healthy progress as accepted by other communities. Other research communities went through similar processes. I will then present the unique challenges of mobile and wireless experimentation, and discuss approaches, past, current, and future to address these challenges. Finally, I will discuss how reproducibility extends to mobile and wireless security research.</p>
+            <b>Bio</b>
+            <br>
+            <p align="justify">Guevara Noubir holds a PhD is Computer Science from the Swiss Federal Institute of Technology in Lausanne (EPFL). His research covers both theoretical and practical aspects of secure and robust wireless and mobile systems. Prior to joining the faculty of Northeastern University, he was a senior research scientist at CSEM SA (Switzerland) where he led several research projects in the area of wireless and mobile networking. In particular, he contributed to the definition of the third generation Universal Mobile Telecommunication System (UMTS) standardized as 3GPP WCDMA and was the lead of the Data Networking Stack for the first 3G demonstrator in the world (as part of the FRAMES EU Research Project). In 2013, Noubir led Northeastern University’s team in the DARPA Spectrum Challenge competition winning the 2013 Cooperative Challenge. Dr. Noubir held visiting research positions at Eurecom, MIT, and UNL. He is a Senior Member of the IEEE, a member of the ACM, and a recipient of the NSF CAREER Award. He serves on the editorial boards of IEEE Transactions on Mobile Computing, ACM Transaction on Privacy and Security, and co-chaired several ACM and IEEE conferences in the fields of mobile, wireless, and security (ACM WiSec, IEEE CNS, IEEE SECON, IEEE WoWMoM).</p> -->
+            <!--
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Welcome and intro</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Tips and share</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>View from the top</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+            </div>
+            -->
+    </div></section>
+
+    <section id="awards" class="section faq" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">AWARDS</h3>
+                </div>
+            </div>
+
+            <h3>Test-of-Time Award</h3>
+            <b>An Experimental Study on the Capture Effect in 802.11a Networks</b>
+            <br>
+            Jeongkeun Lee, Wonho Kim, Sung-Ju Lee, Daehyung Jo, Jiho Ryu, Taekyoung Kwon, and Yanghee Choi
+            <br>
+            <h3>Best Paper Award</h3>
+            <b>srsLTE: An Open-Source Platform for LTE Evolution and Experimentation</b>
+            <br>
+            Ismael Gomez-Miguelez (Software Radio Systems Limited, Ireland), Andres Garcia-Saavedra (NEC Laboratories Europe, Germany), Paul D. Sutton (Software Radio Systems Limited, Ireland), Pablo Serrano (Universidad Carlos III de Madrid, Spain), Cristina Cano (Inria Lille-Nord Europe, France), Douglas J. Leith (Trinity College Dublin, Ireland)
+            <br>
+            <h3>WinCool Demo Competition</h3>
+            <img src="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/first-prize.png" width="40px" height="auto"><b>Demo: Enhancing Indoor Spatial Reuse through Adaptive Antenna Beamsteering</b>
+            <br>
+            Danh H. Nguyen (Drexel University), Anton Paatelma (University of Oulu), Harri Saarnisaari (University of Oulu), Nagarajan Kandasamy (Drexel University), Kapil R. Dandekar (Drexel University)
+            <br>
+            <br>
+            <img src="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/second-prize.png" width="40px" height="auto"><b>Demo: Radar-Enhanced mm-Wave Agile Beamsteering</b>
+            <br>
+            Julian Arnold (RWTH Aachen University), Ljiljana Simic (RWTH Aachen University), Marina Petrova (RWTH Aachen University), Petri Mahonen (RWTH Aachen University)
+            <br>
+    </div></section>
+
+    <!--
+    <section id="contribution" class="section bg-image-2 contribution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
+                    
+                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you submit your best work.</p>
+
+                    <a class="btn btn-white" href="#">Submit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- script -->
+    <script type="text/javascript">
+    function hidealldivs (){
+    	about.style.display = 'none';
+    	speakers.style.display='none';
+    	faq.style.display='none';
+    	registration.style.display='none';
+    	schedule.style.display='none';
+    	demo.style.display='none';
+    	keynote.style.display='none';
+        awards.style.display='none';
+    }
+    </script>
+    
+    <script src="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/jquery.min.js"></script>
+    <script src="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/bootstrap.min.js"></script>
+    <script src="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/smooth-scroll.min.js"></script>
+    <script src="./ACM WiNTECH 2016 _ ACM MobiCom 2016_files/main.js"></script>
+
+
+</body></html>
