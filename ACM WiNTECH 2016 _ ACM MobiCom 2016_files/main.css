@@ -329,7 +329,7 @@ ulx li {
   min-height: 50vh;
   position: relative;
   text-align: center;
-  background: url(https://yunqizhang99.github.io/aturfwebpage/images/backgrounds/header.JPG) no-repeat center center/cover;
+  background: url("https://yunqizhang99.github.io/aturfwebpage/images/backgrounds/header.JPG") no-repeat center center/cover;
 }
 .site-header::before {
   content: "";
