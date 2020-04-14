@@ -90,8 +90,12 @@
                     The outbreak of the novel coronavirus (COVID-19) is unfolding as a major global health crisis whose influence extends to major aspects of our daily lives. There have been over 1,000,000 infections worldwide in early April 2020. To this end, tracking and predicting how the virus could spread among people and regions have become critical parts of public health response strategies and early warning and prediction systems. 
                 </p>
                 <p>
-			We design a privacy-preserving crowdsensing system called <b>A-Turf</b>, an acoustic-signal-based communication and sensing system for effective coronavirus tracking and prediction, by leveraging ubiquitous mobile devices. The system can accurately detect “encounters” between users in physical proximity. This work will overcome key challenges of infrastructure-based techniques (such as video monitoring systems) that are difficult to scale with broad coverage. <b>It can alleviate the privacy issues of other radio-signal-based crowdsensing solutions for virus tracking (such as Bluetooth-based ones), in which unique MAC addresses of individual mobile phones are disclosed to peers nearby.</b>
+			We design a privacy-preserving crowdsensing system called <b>A-Turf</b>, an acoustic encounter detection solution for effective coronavirus tracking, by leveraging ubiquitous mobile devices. The system can accurately detect “encounters” between users within physical proximity, say the range of 6 feet (social distance). This work will overcome key challenges of infrastructure-based techniques (such as video monitoring systems) that are difficult to scale with broad coverage.
                 </p>
+		   
+		<p>
+			To the best of our knowledge, A-Turf is the first work on encounter detection using acoustic signals in the context of virus tracking. <b>The benefits of using acoustic signals rather than other signals (such as Bluetooth radio signals) are mainly due to the former’s privacy-preserving nature—specifically, no unique MAC address disclosure and limited communication range—which is exactly what we need to avoid privacy concerns and “false encounters” between faraway users apart to avoid false alarms.</b> The Bluetooth based solutions may use some mechanisms such as randomization to avoid unique MAC address disclosure. However, it is very difficult for them to limit the Bluetooth communication range within physical proximity, say the range of 6 feet.   
+		</p>
 
                 <div>
                     <center>
@@ -133,7 +137,7 @@
                 <p>&nbsp;</p>
 
                 <p>
-                    <b>Privacy Preservation:</b> Information privacy means the information owner has a certain degree of control over information sharing with others. This means that the degree of privacy preservation is not measured by the amount of information shared or disclosed to others; instead, it is measured by the owner’s degree of control over such sharing or disclosure. In A-Turf, users have full control over their individual information. <b>Our acoustic-signal-based solution is different from radio-based solutions such as Bluetooth-based ones, where unique device MAC addresses are disclosed outside user control.</b> Besides control over unique identifiers (e.g., phone IDs), users also have full control over information sharing or disclosure to their peers or public health authorities (e.g., the CDC). The above are two potential working scenarios with different degrees of information sharing or disclosure.
+                    <b>Privacy Preservation:</b> Information privacy means the information owner has a certain degree of control over information sharing with others. This means that the degree of privacy preservation is not measured by the amount of information shared or disclosed to others; instead, it is measured by the owner’s degree of control over such sharing or disclosure. In A-Turf, users have full control over their individual information. Our acoustic solution has no unique device MAC address disclosure. Besides,  users have full control over information sharing or disclosure to their peers or public health authorities (e.g., the CDC). The above are two potential working scenarios with different degrees of information sharing or disclosure.
                 </p>
 
                 <p>
