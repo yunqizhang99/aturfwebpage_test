@@ -86,7 +86,7 @@
         <div class="container">
 	  <div class="container1">
             <div class="row" align="justify">
-                <p>
+                <!-- <p>
                     The outbreak of the novel coronavirus (COVID-19) is unfolding as a major global health crisis whose influence extends to major aspects of our daily lives. There have been over 1,000,000 infections worldwide in early April 2020. To this end, tracking and predicting how the virus could spread among people and regions have become critical parts of public health response strategies and early warning and prediction systems. 
                 </p>
                 <p>
@@ -166,7 +166,64 @@
                 <p align="center" style="font-size: 14px">
                     Updated July 6 2020 05:42pm<br>
                     &copy; Copyright 2020 The Ohio State University
-                </p>
+                </p> -->
+
+        <p>
+            <b>Project Team</b>
+        </p>
+        <p>
+            Principal Investigator and Co-Principal Investators
+        </p>
+        <ol>
+            <li>Ness Shroff (PI)</li>
+            <li>Dong Xuan (Co-PI)</li>
+        <ol>
+        <p>
+            Graduate Students and Postdocs
+        </p>
+        <ul>
+            <li>Wenbo Ren (Ohio State)</li>
+            <li>Yuxiang Luo (Ohio State)</li>
+            <li>Cheng Zhang (Ohio State)</li>
+            <li>Yunqi Zhang (Ohio State)</li>
+        </ul>
+
+        <p>
+            <b>Project Goals</b>
+        </p>
+        <p>
+            The outbreak of novel coronavirus (COVID-19) is unfolding as a major international crisis whose influence extends to every aspect of our daily lives. Our goal in this proposal will be to develop an approach that will facilitate multi-faceted predictions such as virus spread, vulnerable areas of the population, key resources, hospitalization rates, etc. Our work will follow a two-pronged approach:
+        </p>
+        <p>
+            Privacy Preserving Data Collection: We will build a privacy-preserving crowdsensing system for effective coronavirus tracking and prediction by leveraging the ubiquity of mobile devices. In such a system, individual user IDs are not disclosed to others and the system can accurately detect encounters in physical proximity with one-meter-level granularity. This work will overcome key challenges of infrastructure-based techniques such as video monitoring systems, etc., that are difficult to scale and provide broad coverage. To that end, we will develop a new crowdsensing system for coronavirus tracking and prediction by identifying and monitoring the persons with whom users have interacted using acoustic signal transmission with common mobile phone sensors (i.e., speakers and microphones). We will leverage the normal procedure of human interactions in the context of social encounters and adapt a novel acoustic signals dissemination service that selectively broadcasts information within particular “turfs”. The encounters’ information will be uploaded to a central server (e.g., at the CDC) either automatically or with users’ manual processing. The map at the central server will be updated accordingly. Our solution will preserve a high degree of privacy in the following dimensions: (i) The communication (sensing) range of acoustic signals on mobile phones is naturally small compared with WiFi and Bluetooth signals, but fortunately meets our requirements on virus detection. The short range helps achieve a certain degree of privacy in the sense that only the encounters nearby can be sensed. (ii) Each user’s unique ID such as WiFi and Bluetooth MAC addresses would not be disclosed to their peer encounters. Instead, only randomly generated IDs are disclosed. (iii) Users can choose what information to report to the central server, e.g., their encounters with/without GPS, their medical condition, age, real ID, etc. They could also choose not to report certain encounters or encounters at certain locations.
+        </p>
+        <p>
+            Multi-faceted Virus Prediction: Our goal will be to leverage this data to create a virus spread model that can be used to (i) predict the detailed spread of COVID-19. Here we will also use mitigation mechanisms such as social distancing, quarantining, etc., to help understand and explain to the  public the benefits of such measures;  (ii) estimate resources needed at various locations, such as hospital beds, ventilators, etc., by looking at age/health history information and then correlating them with hospitalization rates and (iii)  identify areas of greatest vulnerability and potential spikes. To make these predictions, we will leverage our extensive experience in stochastics, online learning, and worm propagation/containment. We will also use other available data to augment the data collection above (e.g., available information about typical age range, number of individuals living in a home, etc.).  Our work will also leverage our recent work on online learning (graphical bandits), where we use dependencies within a graph to make very accurate predictions. We will also use our collected data to analyze the efficacy of existing epidemic models, including our own, to find those that work well not only during the late spread of the virus (e.g., like the deterministic epidemic models), but those that can allow us to understand the variability and robustness of the predictions. Our goal will be to build a model that is insightful, accurate and robust for making multi-faceted predictions, such as the ones outlined above.
+        </p>
+
+        <p>
+            <b>Accomplishments</b>
+        </p>
+        <p>
+            <b>Year 1</b>
+        </p>
+        <p>
+            Development of A-Turf --- An Acoustic Based Contact Tracing Apps: We have developed a new acoustic signal transmission based app by using common mobile phone sensors (i.e., speakers and microphones). A-Turf selectively broadcasts inaudible ultrasonic signals (including its randomly generated ID) in a nearby area. In mobile contact tracing, indiviudal mobile phone broadcasts and receives random IDs to achieve automatic contact tracing. Most existing contact tracing solutions use Bluetooth, which may lead to lots of false alarms, because Blutooth penetrates walls and other obstacles that prevent the spread of the virus. In A-Turf, each user generates a virtual proximity range. If two users enter each other’s proximity range, they will receive each other’s random ID. If one user tests positive for COVID-19, the public health authority can publish her/his random ID history (this action doesn’t disclose the user’s identity. Users can compare the random IDs they’ve received with the published patient’s random ID history to know if they have contact(s) with patient(s). We have implemented and tested A-Turf on several android based systems and shown the system to work effectively. </p>
+        <p>
+            Study of Performance of Tracking Apps: A large number of Bluetooth-based mobile apps have been developed recently to help tracing close contacts of contagious COVID19 individuals. These apps make decisions based on whether two users are in close proximity (e.g., within 6 ft) according to the distance measured from the received signal strength (RSSI ) of Bluetooth. We provided a detailed study of the current practice of RSSI-based distance measurements among contact tracing apps by analyzing various factors that can affect the RSSI value and how each app has responded to them. Our analysis shows that configurations for the signal transmission power (TxPower) and broadcasting intervals that affect RSSI vary significantly across different apps and a large portion of apps do not consider these affecting factors at all, or with quite limited tuning.</p>
+        <p>
+            Study of Privacy of Tracking Apps: We rigorously study the privacy pitfalls in methods to digital contact tracing mobile apps have been developed. Unfortunately, many of these apps lack transparency and thus escalate concerns about their security and privacy. In recent work, we have systematically performed a cross-platform study of the privacy issues in official contact tracing apps worldwide. To this end, we have collected 41 released apps in total, many of which run on both iOS and Android platforms, and analyzed both their documentation and binary code. Our results show that some apps expose identifiable information that can enable fingerprinting of apps and tracking of specific users that raise security and privacy concerns. Further, some apps have inconsistent data collection behaviors across different mobile platforms even though they are designed for the same purpose.</p>
+        <p>
+            Development of a Blueprint for Pandemic Mitigation: Traditional methods for mitigating pandemics employ a dual strategy of contact tracing plus testing combined with quarantining and isolation. The contact tracing aspect is usually done via manual (human) contact tracers, which are labor-intensive and expensive. In many large-scale pandemics (e.g., COVID-19), testing capacity is resource limited, and current myopic testing strategies are resource wasteful. To address these challenges, we have recently provided a blueprint on how to contain the spread of a pandemic by leveraging wireless technologies and advances in sequential learning for efficiently using testing resources in order to mitigate the spread of a large-scale pandemic. We study how different wireless technologies could be leveraged to improve contact tracing and reduce the probabilities of detection and false alarms. The idea is to integrate different streams of data in order to create a susceptibility graph whose nodes correspond to an individual and whose links correspond to spreading probabilities. We then show how to develop efficient sequential learning based algorithms in order to minimize the spread of the virus infection. In particular, we show that current contact tracing plus testing strategies that are aimed at identifying (and testing) individuals with the highest probability of infection are inefficient. Rather, we argue that in a resource constrained testing environment, it is instead better to test those individuals whose expected impact on virus spread is the highest. We rigorously formulate the resource constrained testing problem as a sequential learning problem and provide efficient algorithms to solve it. We also provide numerical results that show the efficacy of our testing strategy.</p>
+        <p>
+            <b>Publications</b>
+        </p>
+        <ul>
+            <li>Yuxiang Luo, Cheng Zhang, Yunqi Zhang, Chaoshun Zuo, Dong Xuan, Zhiqiang Lin, Adam C. Champion, Ness Shroff. ACOUSTIC-TURF: Acoustic-based Privacy-Preserving COVID-19 Contact Tracing. arXiv preprint arXiv:2006.13362 (2020).</li>
+            <li>Rahul Singh, Wenbo Ren, Fang Liu, Dong Xuan, Zhiqiang Lin, Ness B. Shroff, A Blueprint for Effective Pandemic Mitigation, accepted to appear in the ITU Journal on Future and Evolving Technologies (ITU J-FET), Dec. 2020.</li>
+            <li>Qingchuan Zhao, Haohuang Wen, Zhiqiang Lin, Dong Xuan, Ness B. Shroff, On the Accuracy of Measured Proximity of Bluetooth-Based Contact Tracing Apps, in Proc. of International Conference on Security and Privacy in Communication Systems (SecureComm), Oct. 2020.</li>
+            <li>Haohuang Wen, Qingchuan Zhao, Zhiqiang Lin, Dong Xuan, Ness B. Shroff, A Study of the Privacy of COVID-19 Contact Tracing Apps, in Proc. of International Conference on Security and Privacy in Communication Systems (SecureComm), Oct. 2020.</li>
+        </ul>
             </div><!-- /.row -->
 	  </div><!-- /.container1>
         </div><!-- /.container -->
